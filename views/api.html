@@ -1,0 +1,18 @@
+<form class="form">
+  <div class="form-group">
+    <label class="sr-only" for="url-input">Url</label>
+    <div class="input-group">
+      <div class="input-group-addon">http://</div>
+      <input type="text" ng-model="url" class="form-control" id="url-input" placeholder="URL" disabled>
+    </div>
+    </div>
+    <br>
+    <button ng-click="get()" class="btn btn-primary">GET</button>
+    <button ng-click="put()" class="btn btn-primary">PUT</button>
+    <button ng-click="post()" class="btn btn-primary">POST</button>
+    <button ng-click="delete()" class="btn btn-primary">DELETE</button>
+  </div>
+</form>
+
+<h3>Reponse</h3>
+<textarea rows="20" cols="100" ng-bind="response" disabled="true"></textarea>
